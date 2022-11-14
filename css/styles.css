@@ -1,28 +1,35 @@
 body {
   background-image: url("../images/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
-@media (max-width: 757px) {
-  body {
-    background-image: url("../images/georgie-cobbs-bKjHgo_Lbpo-unsplash2.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-}
+
 
 a {
   text-decoration: none;
 }
 
+a:hover,
+a:focus {
+  color: #F2F149;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+
+/* --------------------Homepage */
+
 .hero {
   text-align: center;
-  padding: 200px 20px;
+  padding: 130px 20px;
 
 }
 .hero h1 {
@@ -34,17 +41,217 @@ a {
 }
 
 .hero h2 {
-  font-size: 32px;
+  font-size: 30px;
   line-height: 2;
   margin-bottom: 100px;
 }
 
-.hero-btn {
+.hero-link,
+.cv-link,
+.projects-link {
   color: white;
   background-color: #343383;
-  font-size: 24px;
+  font-size: 20px;
   padding: 20px 30px;
   border-radius: 20px;
   box-shadow: 10px 10px 15px rgb(0 0 0 / 30%);
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+
+
+/* --------------------Navigation */
+
+.container-fluid {
+  padding: 10px 30px;
+}
+
+.logo {
+  color: #343383;
+  font-weight: bold;
+  font-size: 24px;
+  padding-right: 40px;
+}
+
+.logo:hover,
+.logo:focus {
+  transform: scale(1.2);
+  color:#343383;
+}
+
+.nav-item {
+  padding-right: 40px;
+}
+
+.nav-link {
+  font-size: 18px;
+}
+
+.active {
+  border-bottom: 3px solid;
+}
+
+
+
+/* --------------------Footer */
+
+.fa-brands {
+  font-size: 25px;
+  color:#343383;
+}
+
+.fa-brands:hover,
+.fa-brands:focus {
+  transform: scale(1.3);
+}
+
+
+
+/* --------------------About Me Page */
+
+.about-container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.about h1{
+  font-size: 52px;
+  margin-bottom: 30px;
+}
+
+.about p{
+  font-size: 16px;
+}
+
+.about-text {
+  max-width: 900px;
+}
+
+.img-holder {
+  text-align: center;
+  margin-bottom: 50px; 
+}
+
+.profile-img {
+  border-radius: 70px;
+  max-width: 250px;
+}
+
+
+
+/* --------------------My Projects */
+
+.my-projects {
+  text-align: center;
+  margin: 50px;
+}
+
+.my-projects-title{
+  font-size: 52px;
+  margin-bottom: 30px;
+}
+
+.my-projects-text{
+  font-size: 16px;
+}
+
+.skills-link {
+  color: #343383;
+}
+
+.skills-link:hover,
+.skills-link:focus{
+  color: #343383;
+}
+
+
+
+/* --------------------My skills */
+
+.skills-container {
+  text-align: center;
+  max-width: 550px;
+}
+
+.skills-title{
+  text-align: center;
+  font-size: 52px;
+  margin-bottom: 30px;
+}
+
+.skills-icon {
+  max-width: 70px;
+  margin: 7px;
+}
+
+
+
+/* --------------------Media Queries */
+
+@media (max-width: 576px) {
+  /* body {
+    background-image: url("../images/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  } */
+
+  .hero {
+    padding: 150px 20px;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+    line-height: 2;
+    margin-bottom: 100px;
+  }
+
+  .img-holder {
+    margin-bottom: 50px;
+  }
+
+  .about,
+  .projects {
+    padding: 20px;
+  }
+  
+  .about p{
+    font-size: 14px;
+  }
+
+  .about h1{
+    font-size: 50px;
+  }
+
+  .about-links {
+    margin: 50px;
+  }
+
+  .cv-link,
+  .hero-link,
+  .projects-link {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 20px;
+  }
+
+  .my-projects-text{
+    display: none;
+  }
+
+  .skills {
+    display: none;
+  }
+}
+
