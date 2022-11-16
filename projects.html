@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@400;500;600;700&family=PT+Mono&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/f299ee0937.js" crossorigin="anonymous"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <link rel="stylesheet" href="./css/styles.css">
@@ -38,7 +41,7 @@
               <a class="nav-link" href="./about.html" title="Learn more about me">About me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./projects.html" title="Take a look at my works">My projects</a>
+              <a class="nav-link active" aria-current="page" href="./projects.html" title="Take a look at my works">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" title="Have questions? Click here to contact me">Contact me</a>
@@ -47,66 +50,109 @@
         </div>
       </div>
     </nav>
-    <div class="projects-container"></div>
     <section class="my-projects">
-      <h1 class="my-projects-title">My Projects</h1>
+      <h1 class="my-projects-title">Projects</h1>
       <p class="my-projects-text">
         Here are my recent projects built by the means of these 
         <a href="#skills" class="skills-link">technologies and skills</a>. 
       </p>
-      <div class="projects-example d-flex flex-wrap m-3">
-        <a href=""></a>
 
-      </div>
+        <div class="projects-container container">
+          <div class="row mt-3 mb-5 mx-3 syrup-project">
+            <div class="col-md-6">
+              <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/958/original/maple_syrup.png?1668520712" alt="Maple Syrup Website" class="img-fluid rounded-md-3 syrup-project-img" />
+            </div>
+            <div class="col-md-6">
+              <h2 class="mb-md-5">
+                Maple Syrup App
+              </h2>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+                quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
+                eos eveniet alias temporibus deserunt veritatis minima fugiat
+                explicabo eum dolore.
+              </p>
+              <div class="mt-md-4 d-flex justify-content-evenly">
+                <a href="https://github.com/YuliiaDr/MapleSyrup" class="projects-link" target="_blank" rel="noopener" title="Source code">Code</a>
+                <a href="https://maplesyrup.netlify.app/" class="projects-link" target="_blank" rel="noopener" title="Launch the project">Launch</a>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5 mb-5 mx-3 weather-project">
+            <div class="col-md-6">
+              <h2 class="mb-md-5">Weather Forecast App</h2>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+                quia, dignissimos nam ratione veniam quibusdam porro omnis quam vel
+                eos eveniet alias temporibus deserunt veritatis minima fugiat
+                explicabo eum dolore.
+              </p>
+              <div class="mt-md-4 d-flex justify-content-evenly weather-project-link">
+                <a href="https://github.com/YuliiaDr/weather_app" class="projects-link" target="_blank" rel="noopener" title="Source code">Code</a>
+                <a href="https://weatherapponline.netlify.app/" class="projects-link" target="_blank" rel="noopener" title="Launch the project">Launch</a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/959/original/weather_app_2.png?1668520754"
+                alt="Weather App"
+                class="img-fluid rounded-md-5 weather-project-img"
+                title="Weather Forecast App"
+              />
+            </div>
+          </div>
+        </div>
+        
     </section>
-    <section class="skills" id="skills">
-      <h2 class="skills-title">My skills</h2>
+
+    <section class="skills mt-5 mb-5" id="skills">
+      <h2 class="skills-title">Skills and Technologies</h2>
       <ul class="skills-container container">
         <div class="row">
           <li class="col-3">
-            <img src="./images/html.png" alt="HTML icon" class="skills-icon img-fluid">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/966/original/html.png?1668521212" alt="HTML icon" class="skills-icon img-fluid" title="HTML">
           </li>
           <li class="col-3">
-            <img src="./images/css.png" alt="CSS icon" class="skills-icon img-fluid">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/963/original/css.png?1668520944" alt="CSS icon" class="skills-icon img-fluid" title="CSS">
           </li>
           <li class="col-3">
-            <img src="./images/js.png" alt="JavaScript icon" class="skills-icon img-fluid">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/967/original/js.png?1668521247" alt="JavaScript icon" class="skills-icon img-fluid" title="JavaScript">
           </li>
           <li class="col-3">
-            <img src="./images/api.png" alt="API icon" class="skills-icon img-fluid">
-          </li>
-        </div>
-        <div class="row">
-          <li class="col-3">
-            <img src="./images/vscode.png" alt="VS code icon" class="skills-icon img-fluid">
-          </li>
-          <li class="col-3">
-            <img src="./images/bootstrap.png" alt="Bootstrap icon" class="skills-icon img-fluid">
-          </li>
-          <li class="col-3">
-            <img src="./images/flexbox.png" alt="Flexbox icon" class="skills-icon img-fluid">
-          </li>
-          <li class="col-3">
-            <img src="images/git.png" alt="GitHub icon" class="skills-icon img-fluid">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/960/original/api.png?1668520876" alt="API icon" class="skills-icon img-fluid" title="API">
           </li>
         </div>
         <div class="row">
           <li class="col-3">
-            <img src="./images/netlify.png" alt="Netlify icon" class="skills-icon img-fluid">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/974/original/vscode.png?1668522427" alt="VS code icon" class="skills-icon img-fluid" title="VScode">
           </li>
           <li class="col-3">
-            <img src="./images/responsive.png" alt="Responsive icon" class="skills-icon img-fluid">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/962/original/bootstrap.png?1668520920" alt="Bootstrap icon" class="skills-icon img-fluid" title="Bootstrap">
           </li>
           <li class="col-3">
-            <img src="./images/seo.png" alt="SEO icon" class="skills-icon img-fluid">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/964/original/flexbox.png?1668520968" alt="Flexbox icon" class="skills-icon img-fluid" title="Flexbox">
           </li>
           <li class="col-3">
-            <img src="./images/react.png" alt="React icon" class="skills-icon img-fluid">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/965/original/git.png?1668521183" alt="GitHub icon" class="skills-icon img-fluid" title="Git">
+          </li>
+        </div>
+        <div class="row">
+          <li class="col-3">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/968/original/netlify.png?1668521274" alt="Netlify icon" class="skills-icon img-fluid" title="Netlify">
+          </li>
+          <li class="col-3">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/972/original/responsive.png?1668522357" alt="Responsive icon" class="skills-icon img-fluid" title="Responsive">
+          </li>
+          <li class="col-3">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/973/original/seo.png?1668522405" alt="SEO icon" class="skills-icon img-fluid" title="SEO">
+          </li>
+          <li class="col-3">
+            <img src="./images/react.png" alt="React icon" class="skills-icon img-fluid" title="React.js">
           </li>
         </div>
         <div class="row">
           <li class="col-12">
-            <img src="./images/node.png" alt="Node icon" class="skills-icon img-fluid">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/971/original/node.png?1668522286" alt="Node icon" class="skills-icon img-fluid" title="Node.js">
           </li>
         </div>
       </ul>

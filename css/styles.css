@@ -1,12 +1,12 @@
 body {
-  background-image: url("../images/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/907/original/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg?1668497034");
   background-size: 100% 100%;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+
+  font-family: 'Noto Serif Oriya', serif;
 }
-
-
 
 a {
   text-decoration: none;
@@ -48,12 +48,12 @@ ul {
 
 .hero-link,
 .cv-link,
-.projects-link {
+.work-link {
   color: white;
   background-color: #343383;
   font-size: 20px;
   padding: 20px 30px;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 10px 10px 15px rgb(0 0 0 / 30%);
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
@@ -70,6 +70,8 @@ ul {
   color: #343383;
   font-weight: bold;
   font-size: 24px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   padding-right: 40px;
 }
 
@@ -96,7 +98,7 @@ ul {
 /* --------------------Footer */
 
 .fa-brands {
-  font-size: 25px;
+  font-size: 30px;
   color:#343383;
 }
 
@@ -156,13 +158,45 @@ ul {
   font-size: 16px;
 }
 
+.projects-container {
+  max-width: 1000px;
+  background-color: #E2E4E1;
+  border: 1px solid #DBD7D4;
+  border-radius: 20px;
+  /* margin-bottom: 40px; */
+  padding: 20px;
+  padding-top: 48px;
+}
+
+.syrup-project-img {
+  height: 98%;
+}
+
+.weather-project-img:hover,
+.weather-project-img:focus,
+.syrup-project-img:hover,
+.syrup-project-img:focus{
+  transform: scale(1.1);
+}
+
 .skills-link {
   color: #343383;
 }
 
 .skills-link:hover,
 .skills-link:focus{
-  color: #343383;
+  color:#F2F149;
+}
+
+.projects-link {
+  color: white;
+  background-color: #343383;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgb(0 0 0 / 30%);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 
@@ -172,6 +206,11 @@ ul {
 .skills-container {
   text-align: center;
   max-width: 550px;
+  background-color: #DBD7D4;
+  border: 1px solid #DBD7D4;
+  border-radius: 20px;
+  margin-bottom: 80px;
+  padding: 20px;
 }
 
 .skills-title{
@@ -199,7 +238,7 @@ ul {
   } */
 
   .hero {
-    padding: 150px 20px;
+    padding: 180px 20px;
   }
 
   .hero h1 {
@@ -226,12 +265,16 @@ ul {
     padding: 20px;
   }
   
-  .about p{
+  .about p,
+  .projects p{
     font-size: 14px;
+    text-align: justify;
   }
 
-  .about h1{
-    font-size: 50px;
+  .about h1,
+  .projects h1,
+  .skills-title {
+    font-size: 40px;
   }
 
   .about-links {
@@ -240,18 +283,66 @@ ul {
 
   .cv-link,
   .hero-link,
-  .projects-link {
+  .work-link {
     font-size: 16px;
     padding: 10px 20px;
     margin: 20px;
+    border-radius: 10px;
   }
 
-  .my-projects-text{
+  .projects h2{
+    margin: 20px;
+  }
+
+  .projects-link{
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  /* .my-projects-text{
     display: none;
+  } */
+
+  .my-projects{
+    margin: 20px;
+  }
+
+  .projects-container {
+    padding: 10px;
+  }
+
+  .syrup-project,
+  .weather-project {
+    margin: 20px 0;
+  }
+
+  .syrup-project img {
+    padding-top: 30px;
   }
 
   .skills {
-    display: none;
+    padding-top: 20px;
   }
+  .skills-title {
+    margin-top: 30px;
+  }
+
+  .weather-project-link {
+    margin-bottom: 20px;
+  }
+
+  .skills-container{
+    margin: 0 auto;
+    max-width: 300px;
+  }
+
+  .skills img {
+    max-width: 50px;
+  }
+  /* .skills {
+    display: none;
+  } */
 }
 
