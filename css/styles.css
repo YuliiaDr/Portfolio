@@ -1,6 +1,6 @@
 body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/053/907/original/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpg?1668497034");
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -46,12 +46,21 @@ ul {
   margin-bottom: 100px;
 }
 
-.hero-link,
-.cv-link,
-.work-link {
+.hero-link {
   color: white;
   background-color: #343383;
   font-size: 20px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgb(0 0 0 / 30%);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.cv-link,
+.work-link,
+.projects-link {
+  color: white;
+  background-color: #343383;
+  font-size: 16px;
   padding: 20px 30px;
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgb(0 0 0 / 30%);
@@ -160,12 +169,17 @@ ul {
 
 .projects-container {
   max-width: 1000px;
+  /* background-color: #BBBCD0; */
   background-color: #E2E4E1;
   border: 1px solid #DBD7D4;
   border-radius: 20px;
-  /* margin-bottom: 40px; */
   padding: 20px;
   padding-top: 48px;
+}
+
+.syrup-project-img,
+.weather-project-img{
+  border-radius: 10px;
 }
 
 .syrup-project-img {
@@ -186,17 +200,6 @@ ul {
 .skills-link:hover,
 .skills-link:focus{
   color:#F2F149;
-}
-
-.projects-link {
-  color: white;
-  background-color: #343383;
-  font-size: 16px;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 15px rgb(0 0 0 / 30%);
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 
