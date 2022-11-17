@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
 
   font-family: 'Noto Serif Oriya', serif;
+  position: relative;
 }
 
 a {
@@ -283,7 +284,8 @@ footer {
 .email-input,
 .name-input,
 .subject-input,
-.textarea-input {
+.textarea-input,
+.form-control-file {
   margin: 5px;
 }
 
