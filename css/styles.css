@@ -36,7 +36,7 @@ ul {
   font-size: 96px;
 }
 
-.hero p {
+.hero .welcome-text {
   font-size: 52px;
 }
 
@@ -55,6 +55,7 @@ ul {
   box-shadow: 10px 10px 15px rgb(0 0 0 / 30%);
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
 .cv-link,
 .work-link,
 .projects-link {
@@ -67,6 +68,16 @@ ul {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
+.signature{
+  font-family: 'PT Mono', monospace;
+  font-size: 14px;
+  font-weight: normal;
+  /* opacity: 0.8; */
+}
+
+.signature-link {
+  color: #343383;
+}
 
 
 /* --------------------Navigation */
@@ -106,13 +117,20 @@ ul {
 
 /* --------------------Footer */
 
-.fa-brands {
+footer {
+  margin-top: 10px;
+}
+
+.fa-brands,
+.fa-solid {
   font-size: 30px;
   color:#343383;
 }
 
 .fa-brands:hover,
-.fa-brands:focus {
+.fa-brands:focus,
+.fa-solid:hover,
+.fa-solid:focus {
   transform: scale(1.3);
 }
 
@@ -204,7 +222,7 @@ ul {
 
 
 
-/* --------------------My skills */
+/* --------------------My Skills */
 
 .skills-container {
   text-align: center;
@@ -225,6 +243,53 @@ ul {
 .skills-icon {
   max-width: 70px;
   margin: 7px;
+}
+
+
+
+/* --------------------Contact Me Page */
+
+.contact h1{
+  margin: 40px;
+}
+
+.contact-form{
+  margin: 30px auto;
+  max-width: 400px;
+}
+
+.form-control {
+  font-size: 14px;
+}
+
+.submit-btn{
+  margin: 10px;
+  color: white;
+  background-color: #343383;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-color: #343383;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgb(0 0 0 / 30%);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.submit-btn:hover,
+.submit-btn:focus{
+  color:#F2F149;
+}
+
+.email-input,
+.name-input,
+.subject-input,
+.textarea-input {
+  margin: 5px;
+}
+
+.email-input,
+.name-input,
+.subject-input {
+  max-width: 320px;
 }
 
 
@@ -347,5 +412,9 @@ ul {
   /* .skills {
     display: none;
   } */
+
+  .contact-form {
+    margin: 20px;
+  }
 }
 
